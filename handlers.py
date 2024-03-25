@@ -46,6 +46,6 @@ async def newy(call: CallbackQuery):
     
 @router.callback_query(F.data == "view")
 async def newy(call: CallbackQuery):
-    ans = "<i>Красота есть во всем, не каждому суждено её увидеть</i>"
+    ans = "<i>Красота есть во всём, не каждый в состоянии её увидеть</i>"
     await call.message.answer_animation(b, caption=ans, reply_markup=kb.menu)
     await call.answer()
